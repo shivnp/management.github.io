@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bill Management System</h1>
+        <form id="billForm">
+            <label for="submissionDate">Submission Date:</label>
+            <input type="date" id="submissionDate" required>
+            
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" step="0.01" required>
+            
+            <label for="purpose">Purpose:</label>
+            <input type="text" id="purpose" required>
+            
+            <label for="description">Description:</label>
+            <textarea id="description" required></textarea>
+            
+            <label for="projectNumber">Project Number:</label>
+            <input type="text" id="projectNumber" required>
+            
+            <label for="payeeName">Payee Name:</label>
+            <input type="text" id="payeeName" required>
+            
+            <label for="uploadBill">Upload Bill:</label>
+            <input type="file" id="uploadBill" required>
+            
+            <button type="submit">Submit Bill</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
